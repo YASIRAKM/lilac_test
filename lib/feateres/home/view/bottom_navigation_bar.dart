@@ -21,6 +21,7 @@ class BottomNavigationView extends ConsumerWidget {
         child: const Icon(
           CupertinoIcons.money_dollar_circle,
           color: AppColors.background,
+          size: 36,
         ),
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
@@ -37,6 +38,7 @@ class BottomNavigationView extends ConsumerWidget {
         unselectedItemColor: AppColors.primary,
         currentIndex: index,
         showUnselectedLabels: true,
+        type: BottomNavigationBarType.fixed,
         showSelectedLabels: true,
         onTap: (value) {
           if (value == 3) {
